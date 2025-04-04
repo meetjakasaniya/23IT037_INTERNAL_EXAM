@@ -10,11 +10,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// mongoose.connect("mongodb+srv://23it037:meet.6782@exam.npusmsm.mongodb.net/?retryWrites=true&w=majority&appName=exam", { useNewUrlParser: true, useUnifiedTopology: true })
-//     .then(() => console.log('MongoDB connected'))
-//     .catch(err => console.log(err));
-
-mongoose.connect('mongodb+srv://meet:meet.6782@exam.npusmsm.mongodb.net/?retryWrites=true&w=majority&appName=exam', {
+mongoose.connect('mongodb+srv://<Username>:<DB_Password>@exam.npusmsm.mongodb.net/?retryWrites=true&w=majority&appName=exam', {
     ssl: true,
     tls: true,
 }).then(() => console.log('MongoDB connected')).catch(err => console.log(err));
